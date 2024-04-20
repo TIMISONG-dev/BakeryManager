@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinator"
+    android:background="@color/colorBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$Behavior">
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/ThemeOverlay.MaterialComponents.Light">
+            <LinearLayout
+                android:gravity="center_horizontal|center_vertical|left"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:gravity="center_horizontal|center_vertical"
+                    android:layout_width="100px"
+                    android:layout_height="100px">
+                    <ImageView
+                        android:layout_width="80px"
+                        android:layout_height="80px"
+                        android:tint="@color/colorOnBackground"
+                        android:src="@drawable/ic_account" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="20px"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorOnBackground"
+                    android:text="Hello, User!" />
+                <LinearLayout
+                    android:layout_width="100px"
+                    android:layout_height="100px"
+                    android:layout_margin="40px"
+                    android:gravity="center_horizontal|center_vertical">
+                    <ImageView
+                        android:layout_width="70px"
+                        android:layout_height="70px"
+                        android:src="@drawable/ic_cart"
+                        android:tint="@color/colorOnBackground" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </com.google.android.material.appbar.MaterialToolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+        <!-- Your content below appbar right here -->
+        <ScrollView
+            android:id="@+id/scrollview"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:layout_width="match_parent">
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_width="match_parent">
+                <LinearLayout
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:layout_width="match_parent">
+                    <LinearLayout
+                        android:id="@+id/box1"
+                        android:clickable="true"
+                        android:layout_width="420px"
+                        android:layout_height="620px"
+                        android:layout_margin="20px"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal|center_vertical|top"
+                        android:background="@drawable/lightboxes">
+                        <LinearLayout
+                            android:layout_width="300px"
+                            android:layout_margin="20px"
+                            android:layout_height="300px"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:background="@drawable/blueboxes">
+                            <ImageView
+                                android:id="@+id/icon1"
+                                android:layout_width="200px"
+                                android:layout_height="200px"
+                                android:src="@drawable/simplebread" />
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/name1"
+                            android:layout_width="240px"
+                            android:singleLine="true"
+                            android:layout_height="wrap_content"
+                            android:text="A loaf of bread"
+                            android:textColor="@color/colorOnBackground"
+                            android:textSize="18sp"
+                            android:padding="10px" />
+                        <TextView
+                            android:id="@+id/cost1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="800$"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="16sp"
+                            android:padding="10px" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/box2"
+                        android:clickable="true"
+                        android:layout_width="420px"
+                        android:layout_height="620px"
+                        android:layout_margin="20px"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal|center_vertical|top"
+                        android:background="@drawable/lightboxes">
+                        <LinearLayout
+                            android:layout_width="300px"
+                            android:layout_margin="20px"
+                            android:layout_height="300px"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:background="@drawable/blueboxes">
+                            <ImageView
+                                android:id="@+id/icon2"
+                                android:layout_width="200px"
+                                android:layout_height="200px"
+                                android:src="@drawable/baguette" />
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/name2"
+                            android:layout_width="240px"
+                            android:layout_height="wrap_content"
+                            android:text="Baguette"
+                            android:singleLine="true"
+                            android:textColor="@color/colorOnBackground"
+                            android:textSize="18sp"
+                            android:padding="10px" />
+                        <TextView
+                            android:id="@+id/cost2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="800$"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="16sp"
+                            android:padding="10px" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:layout_width="match_parent">
+                    <LinearLayout
+                        android:id="@+id/box3"
+                        android:clickable="true"
+                        android:layout_width="420px"
+                        android:layout_height="620px"
+                        android:layout_margin="20px"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal|center_vertical|top"
+                        android:background="@drawable/lightboxes">
+                        <LinearLayout
+                            android:layout_width="300px"
+                            android:layout_margin="20px"
+                            android:layout_height="300px"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:background="@drawable/blueboxes">
+                            <ImageView
+                                android:id="@+id/icon3"
+                                android:layout_width="200px"
+                                android:layout_height="200px"
+                                android:src="@drawable/darkbread" />
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/name3"
+                            android:layout_width="240px"
+                            android:singleLine="true"
+                            android:layout_height="wrap_content"
+                            android:text="Rye bread"
+                            android:textColor="@color/colorOnBackground"
+                            android:textSize="18sp"
+                            android:padding="10px" />
+                        <TextView
+                            android:id="@+id/cost3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="800$"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="16sp"
+                            android:padding="10px" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/box4"
+                        android:clickable="true"
+                        android:layout_width="420px"
+                        android:layout_height="620px"
+                        android:layout_margin="20px"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal|center_vertical|top"
+                        android:background="@drawable/lightboxes">
+                        <LinearLayout
+                            android:layout_width="300px"
+                            android:layout_margin="20px"
+                            android:layout_height="300px"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:background="@drawable/blueboxes">
+                            <ImageView
+                                android:id="@+id/icon4"
+                                android:layout_width="200px"
+                                android:layout_height="200px"
+                                android:src="@drawable/homebread" />
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/name4"
+                            android:layout_width="240px"
+                            android:layout_height="wrap_content"
+                            android:text="Home bread"
+                            android:singleLine="true"
+                            android:textColor="@color/colorOnBackground"
+                            android:textSize="18sp"
+                            android:padding="10px" />
+                        <TextView
+                            android:id="@+id/cost4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="800$"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="16sp"
+                            android:padding="10px" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

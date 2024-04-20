@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20px"
+    android:gravity="center_horizontal|center_vertical"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical">
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_margin="20px"
+            android:textColor="@color/colorOnBackground"
+            android:layout_weight="1"
+            android:text="Baguette" />
+        <ImageView
+            android:layout_width="70px"
+            android:layout_height="70px"
+            android:layout_margin="20px"
+            android:tint="@color/colorPrimaryText"
+            android:src="@drawable/ic_favorite_outline" />
+    </LinearLayout>
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="700px"
+            android:layout_height="700px"
+            android:src="@drawable/baguette" />
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorOnBackground"
+            android:text="Самый вкусный баггет, возможно, самый вкусный в этой вселенной"
+            android:gravity="center_horizontal|center_vertical"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/desc1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Состав: мука пшеничная, соль, вода, дрожжи"
+            android:textSize="14sp"
+            android:textColor="@color/colorOnSurface" />
+        <TextView
+            android:id="@+id/cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="800$"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="16sp" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buy"
+            style="@style/Widget.Material3.Button"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textColor="@color/colorOnBackground"
+            android:text="@string/buy" />
+
+    </LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@android:color/system_accent1_200</color> <!-- Основной цвет -->
+    <color name="colorPrimaryVariant">@android:color/system_accent2_100</color> <!-- Вариант основного цвета -->
+    <color name="colorOnPrimary">@android:color/system_neutral1_200</color> <!-- Цвет текста на основном цвете -->
+    <color name="colorSecondary">@android:color/system_accent1_50</color> <!-- Вторичный цвет -->
+    <color name="colorSecondaryVariant">@android:color/system_accent1_300</color> <!-- Вариант вторичного цвета -->
+    <color name="colorOnSecondary">@android:color/system_neutral1_100</color> <!-- Цвет текста на вторичном цвете -->
+    <color name="colorBackground">@android:color/system_neutral1_50</color> <!-- Цвет фона -->
+    <color name="colorDarkObject">@android:color/system_accent2_200</color>
+    <color name="colorDarkerObject">@android:color/system_accent2_300</color>
+    <color name="colorLightObject">@android:color/system_accent2_10</color>
+    <color name="colorLighterObject">@android:color/system_accent2_100</color>
+    <color name="colorLigherSelectedObject">@android:color/system_accent1_200</color>
+    <color name="colorSurface">@android:color/system_neutral1_50</color> <!-- Цвет поверхности -->
+    <color name="colorOnBackground">@android:color/system_accent1_900</color> <!-- Цвет текста на фоне -->
+    <color name="colorOnSurface">@android:color/system_accent2_500</color> <!-- Цвет текста на поверхности -->
+    <color name="colorPrimaryText">@android:color/system_accent1_500</color>
+</resources>
