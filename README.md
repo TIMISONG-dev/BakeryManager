@@ -1,4 +1,4 @@
-<h1>Приложение для пекарни с MatrialYou дизайном</h1>
+<h1>Приложение для пекарни с MaterialYou дизайном</h1>
 
 <h2>Activity регистрации:</h2>
 <img src="https://github.com/TIMISONG-dev/BakeryManager/assets/63451549/0c7af522-704d-4e6d-a0b9-692d58899012" width=200/>
